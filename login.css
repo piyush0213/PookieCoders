@@ -1,0 +1,144 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #6C5CE7, #E84393);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.masterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 900px;
+}
+
+#loginbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.boxArea {
+    padding: 30px;
+}
+
+#graphic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    border-radius: 10px 0 0 10px;
+}
+
+#graphicImage {
+    max-width: 100%;
+    height: auto;
+}
+
+#graphic p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2D3436;
+    margin-top: 10px;
+}
+
+#LoginArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxItems {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.boxItems img {
+    width: 80px;
+}
+
+.boxItems p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.inputs label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.inputs input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#submitButton {
+    background: #6C5CE7;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#submitButton:hover {
+    background: #E84393;
+}
+
+#log-on p {
+    font-size: 14px;
+    color: #555;
+}
+
+#log-on a {
+    color: #6C5CE7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#log-on a:hover {
+    color: #E84393;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #loginbox {
+        grid-template-columns: 1fr;
+    }
+
+    #graphic {
+        display: none;
+    }
+}
